@@ -85,6 +85,7 @@
       { name: "Pavement Markings", count: 10, hasImages: true },
       { name: "Road Signs", count: 10, hasImages: true },
       { name: "Basic Driving", count: 28 },
+      { name: "Motorcycle Hand Signals", count; 17},
     ];
 
     const republicActsQuestions = [
@@ -510,7 +511,128 @@
             correct: 2
         },
     ]
+    const motorcycleHandSignals = [
 
+    {
+        question: "MOTORCYCLE HAND SIGNALS: What does this motorcycle hand signal mean?",
+        image: "images/mc_1.png",
+        options: ["A. Left Turn", "B. Right Turn", "C. Stop"],
+        correct: 0
+    }, //1
+
+    {
+        question: "MOTORCYCLE HAND SIGNALS: What does this motorcycle hand signal mean?",
+        image: "images/mc_2.png",
+        options: ["A. Slow Down", "B. Right Turn", "C. Pull Off"],
+        correct: 1
+    }, //2
+
+    {
+        question: "MOTORCYCLE HAND SIGNALS: What does this motorcycle hand signal mean?",
+        image: "images/mc_3.png",
+        options: ["A. Stop", "B. Comfort Stop", "C. Fuel Stop"],
+        correct: 0
+    }, //3
+
+    {
+        question: "MOTORCYCLE HAND SIGNALS: What does this motorcycle hand signal mean?",
+        image: "images/mc_4.png",
+        options: ["A. Speed Up", "B. Slow Down", "C. Follow Me"],
+        correct: 1
+    }, //4
+
+    {
+        question: "MOTORCYCLE HAND SIGNALS: What does this motorcycle hand signal mean?",
+        image: "images/mc_5.png",
+        options: ["A. Speed Up", "B. Ride Staggered", "C. Double File"],
+        correct: 0
+    }, //5
+
+    {
+        question: "MOTORCYCLE HAND SIGNALS: What does this motorcycle hand signal mean?",
+        image: "images/mc_6.png",
+        options: ["A. Hazard in Road", "B. Police Ahead", "C. Pull Off"],
+        correct: 0
+    }, //6
+
+    {
+        question: "MOTORCYCLE HAND SIGNALS: What does this motorcycle hand signal mean?",
+        image: "images/mc_7.png",
+        options: ["A. Follow Me", "B. Left Turn", "C. Speed Up"],
+        correct: 0
+    }, //7
+
+    {
+        question: "MOTORCYCLE HAND SIGNALS: What does this motorcycle hand signal mean?",
+        image: "images/mc_8.png",
+        options: ["A. Pull Off", "B. Come Around / Take the Lead", "C. Right Turn"],
+        correct: 1
+    }, //8
+
+    {
+        question: "MOTORCYCLE HAND SIGNALS: What does this motorcycle hand signal mean?",
+        image: "images/mc_9.png",
+        options: ["A. Pull Off", "B. Fuel Stop", "C. Hazard in Road"],
+        correct: 0
+    }, //9
+
+    {
+        question: "MOTORCYCLE HAND SIGNALS: What does this motorcycle hand signal mean?",
+        image: "images/mc_10.png",
+        options: ["A. Double File", "B. Ride Staggered", "C. Single File"],
+        correct: 2
+    }, //10
+
+    {
+        question: "MOTORCYCLE HAND SIGNALS: What does this motorcycle hand signal mean?",
+        image: "images/mc_11.png",
+        options: ["A. Single File", "B. Double File", "C. Ride Staggered"],
+        correct: 1
+    }, //11
+
+    {
+        question: "MOTORCYCLE HAND SIGNALS: What does this motorcycle hand signal mean?",
+        image: "images/mc_12.png",
+        options: ["A. Ride Staggered", "B. Double File", "C. Follow Me"],
+        correct: 0
+    }, //12
+
+    {
+        question: "MOTORCYCLE HAND SIGNALS: What does this motorcycle hand signal mean?",
+        image: "images/mc_13.png",
+        options: ["A. Fuel Stop", "B. Refreshment Stop", "C. Comfort Stop"],
+        correct: 0
+    }, //13
+
+    {
+        question: "MOTORCYCLE HAND SIGNALS: What does this motorcycle hand signal mean?",
+        image: "images/mc_14.png",
+        options: ["A. Stop", "B. Comfort Stop", "C. Pull Off"],
+        correct: 1
+    }, //14
+
+    {
+        question: "MOTORCYCLE HAND SIGNALS: What does this motorcycle hand signal mean?",
+        image: "images/mc_15.png",
+        options: ["A. Refreshment Stop", "B. Fuel Stop", "C. Police Ahead"],
+        correct: 0
+    }, //15
+
+    {
+        question: "MOTORCYCLE HAND SIGNALS: What does this motorcycle hand signal mean?",
+        image: "images/mc_16.png",
+        options: ["A. Turn Signal On", "B. Left Turn", "C. Right Turn"],
+        correct: 0
+    }, //16
+
+    {
+        question: "MOTORCYCLE HAND SIGNALS: What does this motorcycle hand signal mean?",
+        image: "images/mc_17.png",
+        options: ["A. Hazard in Road", "B. Police Ahead", "C. Follow Me"],
+        correct: 1
+    } //17
+
+];
     let state = {
       step: 'menu',
       score: 0,
@@ -539,6 +661,7 @@
                         cat.name === "Basic Driving" ? situationalQuestions :
                         cat.name === "Pavement Markings" ? pavementMarkings :
                         cat.name === "Road Signs" ? roadMarkings :
+                        cat.name === "Motorcycle Hand Signals" ? motorcycleHandSignals :
                         Array.from({ length: cat.count }, () => sampleQuestion);
 
       state = {
